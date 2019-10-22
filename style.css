@@ -1,0 +1,26 @@
+ul li{
+    
+    list-style: none;
+    display: inline;
+    padding: 4px;
+    border: 2px black;
+    background: rgb(0, 153, 235);
+    color: white;
+
+}
+ul{
+    text-align: center;
+}
+
+ul li:visited{
+    color: white;
+}
+body{
+    background: rgb(142, 238, 255);
+}
+main{
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background: rgb(35, 130,240 );
+}
