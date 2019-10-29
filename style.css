@@ -36,3 +36,12 @@ div {
 a:visited {
     color: orange;
 }
+h1 {
+    text-align: center;
+    color: purple;
+    font-family: "Courier New";
+    font-size: x-large;
+}
+#titlehome {
+    padding-top: 100px;
+}
