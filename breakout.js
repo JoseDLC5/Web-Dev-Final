@@ -2,9 +2,9 @@ var canvas = document.getElementById("Canvas");
 var ctx = canvas.getContext("2d");
 
 var x = canvas.width/2;
-var y = canvas.height-30;
+var y = 120;
 var dx = -2;
-var dy = -2;
+var dy = 2;
 
 var ballRadius = 10;
 
@@ -53,7 +53,7 @@ function mouseMoveHandler(e) {
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#39FF14";
     ctx.fill();
     ctx.closePath();
 }
@@ -68,7 +68,7 @@ function drawBricks() {
                 bricks[c][r].y = brickY;
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                ctx.fillStyle = "#0095DD";
+                ctx.fillStyle = "#39FF14";
                 ctx.fill();
                 ctx.closePath();
             }
@@ -108,11 +108,11 @@ function draw() {
                 clearInterval(interval); 
             }
             else {
-                x = canvas.width/2;
-                y = canvas.height-30;
-                dx = 2;
-                dy = -2;
-                paddleX = (canvas.width-paddleWidth)/2;
+                x = Math.random()*480;
+                y = 120;
+                dx = -2
+                dy = 2;
+                
             }
         }
     }
@@ -135,7 +135,7 @@ function draw() {
 function drawPaddle(){
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "0095DD";
+    ctx.fillStyle = "#39FF14";
     ctx.fill();
     ctx.closePath();
 }
@@ -179,26 +179,26 @@ function collisionDetection() {
 
 function drawScore() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#000000";
+    ctx.fillStyle = "#39FF14";
     ctx.fillText("Score: "+score, 8, 20);
 }
 
 function drawLives() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#000000";
+    ctx.fillStyle = "#39FF14";
     ctx.fillText("Lives: "+lives, canvas.width-65, 20);
 }
 
 function drawWin() {
     ctx.font = "24px Arial";
-    ctx.fillStyle = "#4682B4";
-    ctx.fillText("YOU WIN, CONGRATULATIONS!", 120, 180);
+    ctx.fillStyle = "#00FFFF";
+    ctx.fillText("YOU WIN, CONGRATULATIONS!", 80, 180);
 }
 
 function drawLose() {
     ctx.font = "24px Arial";
-    ctx.fillStyle = "#B22222";
-    ctx.fillText("YOU LOSE, TRY AGAIN", 120, 180);
+    ctx.fillStyle = "#ff073a";
+    ctx.fillText("YOU LOSE, TRY AGAIN", 110, 180);
 }
 
 
