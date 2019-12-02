@@ -15,6 +15,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
+    text-align: center;
 }
 
 main{
@@ -26,9 +27,13 @@ main{
     background: black;
 
 }
-canvas{
-    width: 100%;
-    height: auto;
+#dodgeball_canvas{
+    background: black;
+    width: 60%;
+}
+
+#breakout_canvas{
+    background:black;
 }
 
 #game_select{
