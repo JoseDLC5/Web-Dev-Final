@@ -3,7 +3,12 @@ var ctx = canvas.getContext("2d");
 
 var x = canvas.width/2;
 var y = 120;
-var dx = -2;
+if (Math.random() > .5){
+    var dx = -2;
+}
+else {
+    var dx = 2;
+}
 var dy = 2;
 
 var ballRadius = 10;
@@ -110,7 +115,12 @@ function draw() {
             else {
                 x = Math.random()*480;
                 y = 120;
-                dx = -2
+                if (Math.random() > .5){
+                    dx = -2;
+                }
+                else {
+                    dx = 2;
+                }
                 dy = 2;
                 
             }
