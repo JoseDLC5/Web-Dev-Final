@@ -14,9 +14,9 @@ var dPressed = false;
 var spacePressed = false;
 var zeroPressed = false;
 var ballSpeed = 3;
-var playerSpeed = 10;
+var playerSpeed = 6;
 var playerRadius = 35
-var playerFriction = .1
+var playerFriction = .06
 var playerAcc = .5
 
 class Player1{
