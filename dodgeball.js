@@ -460,9 +460,11 @@ function keyDownHandler(e) {
     }
     else if(e.key == "Up" || e.key == "ArrowUp"){
         upPressed = true;
+        e.preventDefault()
     }
     else if(e.key == "Down" || e.key == "ArrowDown"){
         downPressed = true;
+        e.preventDefault()
     }
     else if(e.key == "w" || e.key == "W") {
         wPressed = true;

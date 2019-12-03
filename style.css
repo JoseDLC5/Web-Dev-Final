@@ -34,6 +34,7 @@ main{
 
 #breakout_canvas{
     background:black;
+    width: 60%;
 }
 
 #game_select{
@@ -90,6 +91,29 @@ h1 {
     padding-top: 0px;
     text-align: center;
 }
+#commentTitle{
+    color: orange;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.comment {
+    text-align: left;
+    padding-left: 10%;
+}
+.formElement {
+    font-size: large;
+    width: 100%;
+    display:block;
+    margin:5px;
+    background-color:rgb(0, 195, 255);
+    color:darkblue;
+    font-family: Montserrat,sans-serif;
+}
 
 @media only screen and (min-width: 999px) {
 
@@ -112,5 +136,11 @@ h1 {
     }
     #titlehome{
         padding-top: 24px;
+    }
+    #breakout_canvas{
+        width: 100%;
+    }
+    #dodgeball_canvas{
+        width: 100%;
     }
 }

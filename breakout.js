@@ -1,5 +1,7 @@
-var canvas = document.getElementById("Canvas");
+var canvas = document.getElementById("breakout_canvas");
 var ctx = canvas.getContext("2d");
+canvas.height = 320
+canvas.width = 480
 
 var x = canvas.width/2;
 var y = 120;

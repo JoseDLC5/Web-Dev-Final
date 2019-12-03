@@ -6,6 +6,7 @@
     <title>Home Page</title>
   </head>
   <body>
+      
         <header>
               <nav>
                   <ul>
@@ -17,7 +18,39 @@
         </header>
         <h1 id = "titlehome">Select your Game</h1>
         <div id="game_select">
-          <a href = "breakout.html"><img src = "breakoutimg-resize.jpg" class = "indeximage"></a>
-          <a href = "dodgeball.html"><img src = "super-dodge-ball-usa-resize.png" class = "indeximage"></a>
+          <a href = "breakout.html"><img src = "breakoutimg-resize.jpg" class = "indeximage" alt="play breakout"></a>
+          <a href = "dodgeball.html"><img src = "super-dodge-ball-usa-resize.png" class = "indeximage" alt="play dodgeball"></a>
         </div>
+        <div class="container">
+          <h1 id = "commentTitle">Please Post Your Comments Below!</h1>
+            <section class="input">
+              <form id="postForm" >
+                <input
+                  type="text"
+                  id="formGamertag"class="formElement"
+                  placeholder="Enter your gamertag"
+                  required
+                />
+
+                <textarea
+                  placeholder="Enter Comment"
+                  id="formComment" class="formElement"
+                  rows = '3'
+                  required></textarea>
+                  
+                <select id="formColor" class="formElement" required>
+                  <option value= 0>Retro</option>
+                  <option value= 1>Sunset</option>
+                  <option value= 2>Neon</option>
+                  <option value= 3>Normy</option>
+                </select>
+         
+                <button>Submit Post!</button>
+              </form>
+            </section>
+            <section id="commentList"></section>
+         </div>
   </body>
+ 
+
+<script src="form.js"> </script>
